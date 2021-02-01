@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    color: white;
+    letter-spacing: 3px;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: black;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    font-family: 'Rubik', sans-serif;
+}
+
+.box-three {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 300px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+}
+
+.infos {
+    position: relative;
+}
+
+.background {
+    width: 100%;
+    height: 105%;
+    position: absolute;
+}
+
+.anim{
+    background: url("/img/picto_ynov_jeuxvideo_cube.svg") no-repeat;
+    background-position: center;
+    background-size: 150%;
+    opacity: 25%;
+}
+
+.info {
+    background: url("/img/picto_ynov_informatique_code.svg") no-repeat;
+    background-position: center;
+    background-size: 150%;
+    opacity: 25%;
+}
+.crea {
+    background: url("/img/picto_ynov_crea_idea.svg") no-repeat;
+    background-position: center;
+    background-size: 150%;
+    opacity: 25%;
+}
+
+.audio{
+    background: url("/img/picto_ynov_audiovisuel_clap.svg") no-repeat;
+    background-position: center;
+    background-size: 150%;
+    opacity: 25%;
+}
+
+.com{
+    background: url("/img/picto_ynov_digitale_communication.svg") no-repeat;
+    background-position: center;
+    background-size: 150%;
+    opacity: 25%;
+}
+
+p{
+    font-size: 16px;
+}
+
+.spe{
+    color: grey;
+    font-style: italic;
+}
