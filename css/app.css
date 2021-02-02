@@ -1,9 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-.navbar{
+.navbar {
     background-color: #70b62c !important;
 }
 
-.box{
+.box {
     margin: 2%;
+}
+
+.section-slide {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slider h1 {
+    user-select: none;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(90deg, #70b62c 0%, #2B7EF2 100%);
+    background-size: 110%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 0.5s linear infinite alternate;
+}
+
+@keyframes slide {
+    0% {
+        background-position-x: 0%;
+    }
+
+    50% {
+        background-position-x: 110%;
+    }
+
+    100% {
+        background-position-x: 400%;
+    }
+}
+
+
+.p-slider {
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    width: 320px;
+    text-align: center;
+}
+
+.slider {
+    width: 375px;
+    height: 900px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    height: 850px;
+    width: 330px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.slides::-webkit-scrollbar {
+    width: 10px;
+    height: 30px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides>div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 330px;
+    height: 300px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.slider>a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+}
+
+.slider>a:active {
+    top: 1px;
+}
+
+.slider>a:focus {
+    background: #000;
+}
+
+
+@supports (scroll-snap-type) {
+    .slider>a {
+        display: none;
+    }
+}
+
+#slide-1,
+#slide-2,
+#slide-3,
+#slide-4,
+#slide-5,
+#slide-6,
+#slide-7,
+#slide-8,
+#slide-9,
+#slide-10,
+#slide-11,
+#slide-12,
+#slide-13,
+#slide-14 {
+    height: 700px;
 }
