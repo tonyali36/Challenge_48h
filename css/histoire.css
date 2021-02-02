@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.navbar{
+    background-color: #70b62c !important;
+}
+
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 2%;
+}
+
+.text{
+    font-family: 'Rubik', sans-serif;
+
+    width: 80%;
+}
+
+p{
+    margin-top: 2%;
+}
+
+h1{
+    font-family: 'Rubik', sans-serif;
+}
